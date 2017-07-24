@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>iTunes Music Search</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Rock+Salt');
+</style>
+</head>
+
+
+<body>
+
+
+  <div class="container">
+<!--Header with Title -->
+    <header>
+      <h1>Search Your Favorite Music</h1>
+    </header>
+
+<!--Audio Player Section -->
+    <section class="player">
+      <audio class="music-player" controls="controls" src=""></audio>
+    </section>
+
+
+    <section class="search">
+      <form class="search-form">
+        <h2>Search for some Jams</h2>
+        <input type="search" id="input" value="">
+        <button type="button" id="submit" name="button">Start Looking</button>
+        <button type="button" id="clear" name="button">Clear Search</button>
+      </form>
+    </section>
+
+    <section id="results">
+    </section>
+
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
