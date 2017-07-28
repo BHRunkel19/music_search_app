@@ -31,17 +31,20 @@ fetch(`https://itunes.apple.com/search?term==${input.value}`).then(function(resp
     console.log(data);
     songs.innerHTML = '';
     let results = data.results;
-    for (i=0; i<data.results.length; i++){
+    for (i=0; i<results.length; i++){
     songs.innerHTML +=
     `<div class="artist_profile">
     <h3>${results[i].artistName}</h3>
+    <h4>${results[i].trackName}</h4>
     <img src="${results[i].artworkUrl100}"></img>
-    <button id="about" onClick="window.location.href(${results[i].artistViewUrl})">About Artist</button>
-    <button id="preview">Jam Out</button>
+    <a href="${results[i].trackViewUrl}">About Artist</a>
+    <button id="play">Start the Jam</button>
     </div>`;
     }
   })
 });
+
+
   // .then(function(data){
   //   console.log(data);
   //   songs.innerHTML = '';

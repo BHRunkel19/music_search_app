@@ -126,10 +126,31 @@ h3{
   text-decoration: underline;
 }
 
+h4{
+  font-size: 8px;
+  font-family: "Rock Salt", cursive;
+  color: violet;
+}
+
 .artist_profile{
-  width: 20%;
+  width: 15%;
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
-  padding: 10px;
+  padding: 20px;
+}
+
+.artist_profile button{
+  font-family: "Permanent Marker", cursive;
+  font-size: 10px;
+}
+
+.artist_profile a{
+  color: lime;
+  text-align: center;
+}
+
+#play{
+  background-color: grey;
+  color: lime;
 }
