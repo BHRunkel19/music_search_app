@@ -148,6 +148,9 @@ h4{
 .artist_profile a{
   color: lime;
   text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-style: italic;
 }
 
 #play{
