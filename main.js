@@ -38,7 +38,9 @@ fetch(`https://itunes.apple.com/search?term==${input.value}`).then(function(resp
     <h4>${results[i].trackName}</h4>
     <img src="${results[i].artworkUrl100}"></img>
     <a href="${results[i].trackViewUrl}">About Artist</a>
-    <button id="play">Start the Jam</button>
+    <audio controls>
+      <source src="${results[i].previewUrl}">
+      </audio>
     </div>`;
     }
   })
