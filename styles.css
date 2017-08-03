@@ -101,14 +101,14 @@ input{
 }
 
 h3{
-  font-size: 10px;
+  font-size: 16px;
   font-family: "Rock Salt", cursive;
   color: lime;
   text-decoration: underline;
 }
 
 h4{
-  font-size: 8px;
+  font-size: 12px;
   font-family: "Rock Salt", cursive;
   color: white;
 }
@@ -119,7 +119,7 @@ h4{
   justify-content: center;
   flex-flow: column nowrap;
   padding: 20px;
-  text-align: center; 
+  text-align: center;
 }
 
 .artist_profile img{
