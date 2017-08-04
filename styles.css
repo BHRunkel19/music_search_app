@@ -5,11 +5,20 @@ html{
 }
 
 @keyframes lights{
-  from{
+  0%{
     background-color: rgba(0, 0, 0, 0.5);
   }
-  to{
-    background-color: rgba(180, 180, 250, 0.5);
+  25%{
+    background-color: rgba(102, 196, 234, 0.5);
+  }
+  50%{
+    background-color: rgba(244, 237, 51, 0.5);
+  }
+  75%{
+    background-color: rgba(44, 246, 13, 0.5);
+  }
+  100%{
+    background-color: rgba(19, 42, 214, 0.81);
   }
 }
 
@@ -20,7 +29,14 @@ body {
   background-size: cover;
   border-radius: 50px;
 	background-position: center;
-	background-repeat: repeat-x;
+}
+
+marquee{
+  font-family: "Sedgwick Ave Display", cursive;
+  margin-top: 20px;
+  font-size: 24px;
+  height: 50px;
+  color: violet;
 }
 
 header{
@@ -30,7 +46,7 @@ header{
 .container{
   height: 1000px;
   width: 100%;
-  margin: 50px auto;
+  margin: 10px auto;
   background-size: cover;
   background-position: bottom;
 }
@@ -39,7 +55,7 @@ header{
 h1{
   padding-top: 50px;
   text-align: center;
-  font-family: "Permanent Marker", cursive;
+  font-family: 'Sedgwick Ave Display', cursive;
   font-size: 48px;
   color: violet;
 }
@@ -65,9 +81,9 @@ h1{
 input{
   margin: 0 auto;
   width: 40%;
-  height: 25px;
-  font-family: "Permanent Marker", cursive;
-  font-size: 24px;
+  height: 50px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 30px;
   color: black;
   outline: none;
   background: transparent;
@@ -81,7 +97,7 @@ input{
   font-size: 16px;
   border-radius: 10px;
   margin: 10px auto;
-  font-family: "Permanent Marker", cursive;
+  font-family: 'Alfa Slab One', cursive;
   background: transparent;
 }
 
@@ -90,7 +106,7 @@ input{
   border-radius: 10px;
   font-size: 16px;
   margin: 0 auto;
-  font-family: "Permanent Marker", cursive;
+  font-family: 'Alfa Slab One', cursive;
   background: transparent;
 }
 
@@ -105,14 +121,14 @@ input{
 
 h3{
   font-size: 24px;
-  font-family: "Permanent Marker", cursive;
+  font-family: 'Sedgwick Ave Display', cursive;
   color: black;
   text-decoration: underline;
 }
 
 h4{
   font-size: 20px;
-  font-family: "Permanent Marker", cursive;
+  font-family: 'Sedgwick Ave Display', cursive;
   color: white;
 }
 
@@ -127,12 +143,12 @@ h4{
 
 .artist_profile img{
   width: 50%;
-  height: 150px;
+  height: 100px;
   margin: 0 auto;
 }
 
 .artist_profile button{
-  font-family: "Permanent Marker", cursive;
+  font-family: 'Sedgwick Ave Display', cursive;
   font-size: 10px;
 }
 
@@ -144,7 +160,7 @@ h4{
   font-style: italic;
   width: 50%;
   margin: 0 auto;
-  font-family: "Permanent Marker", cursive;
+  font-family: 'Sedgwick Ave Display', cursive;
 }
 
 .artist_profile audio{
