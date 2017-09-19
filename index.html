@@ -3,9 +3,8 @@
 <head>
   <title>iTunes Music Search</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Lobster|Sarpanch" rel="stylesheet">
   <style>
-@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display');
-@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton');
 </style>
 </head>
 
@@ -18,18 +17,20 @@
   <div class="container">
 <!--Header with Title -->
     <header>
-      <h1>Search Your Favorite Music</h1>
+      <h1>BeatBot</h1>
     </header>
 
     <section class="search">
       <form class="search-form">
-        <input type="search" id="input" value="">
-        <button type="button" id="submit" name="button">Start Looking</button>
-        <button type="button" id="clear" name="button">Clear Search</button>
+        <input type="search" autofocus="autofocus" id="input" value="">
+        <button type="button" class="button" id="submit" name="button">Start Looking</button>
+        <button type="button" class="button" id="clear" name="button">Clear Search</button>
       </form>
+      <h4 id="scroll">Swipe right to see results</h4>
     </section>
 
     <section id="results">
+
     </section>
 
   </div>

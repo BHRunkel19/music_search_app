@@ -1,7 +1,7 @@
 html{
+  animation: lights 5s infinite alternate;
   width: 100%;
   margin: 0 auto;
-  animation: lights 5s 1s infinite alternate;
 }
 
 @keyframes lights{
@@ -24,19 +24,19 @@ html{
 
 body {
   width: 80%;
-  margin: 0 auto;
-	background-image: url("rock_out.jpg");
+  margin: 20px auto;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("rock_out.jpg");
   background-size: cover;
   border-radius: 50px;
 	background-position: center;
 }
 
 marquee{
-  font-family: "Sedgwick Ave Display", cursive;
+  font-family: "Lobster", cursive;
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 20px;
   height: 50px;
-  color: violet;
+  color: white;
 }
 
 header{
@@ -53,19 +53,11 @@ header{
 
 
 h1{
-  padding-top: 50px;
   text-align: center;
-  font-family: 'Sedgwick Ave Display', cursive;
-  font-size: 48px;
-  color: violet;
-}
-
-.player{
-  height: 200px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  font-family: 'Lobster', cursive;
+  text-decoration: underline;
+  font-size: 96px;
+  color: white;
 }
 
 .search-form{
@@ -75,16 +67,18 @@ h1{
   border-bottom: 2px solid grey;
   width: 75%;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 input{
   margin: 0 auto;
   width: 40%;
   height: 50px;
-  font-family: 'Sedgwick Ave Display', cursive;
+  font-family: 'Acme', sans-serif;
   font-size: 30px;
-  color: black;
+  color: cyan;
+  font-style: italic;
+  font-weight: lighter;
   outline: none;
   background: transparent;
   border: none;
@@ -92,75 +86,90 @@ input{
   text-align: center;
 }
 
-#submit{
+.button{
   width: 20%;
+  color: white;
   font-size: 16px;
   border-radius: 10px;
   margin: 10px auto;
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Sarpanch', sans-serif;
   background: transparent;
+  box-shadow: 5px 5px 5px #f442c2;
+  outline: none;
+  cursor: pointer;
 }
 
-#clear{
-  width: 20%;
-  border-radius: 10px;
-  font-size: 16px;
-  margin: 0 auto;
-  font-family: 'Alfa Slab One', cursive;
-  background: transparent;
+.button:active{
+  box-shadow: 0 2px 0 #f442c2;
 }
 
 #results{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: row nowrap;
+  height: 600px;
+  overflow-x: scroll hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
   width: 100%;
-  margin: 0 auto;
-  background: rgba(180, 180, 250, 0.5);
+  background: transparent;
 }
 
 h3{
   font-size: 24px;
-  font-family: 'Sedgwick Ave Display', cursive;
-  color: black;
+  font-family: 'Sarpanch', sans-serif;
+  color: white;
   text-decoration: underline;
 }
 
 h4{
-  font-size: 20px;
-  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 16px;
+  font-family: 'Sarpanch', sans-serif;
   color: white;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#scroll{
+  text-align: center;
+  color: white;
+  padding-top: 20px;
 }
 
 .artist_profile{
-  width: 25%;
+  width: 600px;
+  height: 400px;
+  margin: 10px;
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
   padding: 20px;
   text-align: center;
+  background: rgba(192, 192, 192, 0.8); 
+  border-radius: 25px;
 }
 
 .artist_profile img{
-  width: 50%;
-  height: 100px;
-  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  border-radius: 50px;
 }
 
 .artist_profile button{
-  font-family: 'Sedgwick Ave Display', cursive;
+  font-family: 'Acme', sans-serif';
   font-size: 10px;
 }
 
 .artist_profile a{
-  color: black;
+  color: cyan;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   font-style: italic;
   width: 50%;
   margin: 0 auto;
-  font-family: 'Sedgwick Ave Display', cursive;
+  font-family: 'Acme', sans-serif;
 }
 
 .artist_profile audio{
